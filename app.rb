@@ -1,10 +1,8 @@
 require 'sinatra'
 require 'stripe'
-begin
+
 require 'dotenv'
 Dotenv.load
-rescue
-end
 
 set :publishable_key, ENV['STRIPE_PUBLISHABLE_KEY']
 set :secret_key, ENV['STRIPE_SECRET_KEY']
