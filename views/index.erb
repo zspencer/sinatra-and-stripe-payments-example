@@ -1,0 +1,13 @@
+<form action="/charge" method="post" class="payment">
+  <article>
+  <label class="amount">
+    <span>Amount: $100.00</span>
+  </label>
+  <label>Email:
+    <input name="email" type="email">
+  </label>`
+  </article>
+
+  <script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+    data-key="<%= settings.publishable_key %>"></script>
+</form>
